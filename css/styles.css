@@ -32,8 +32,6 @@ body {
   font-family: Roboto, sans-serif;
 }
 header {
-  position: fixed;
-  z-index: 1;
   width: 100%;
   background-color: #fff;
 }
@@ -201,7 +199,7 @@ a.link {
   background-position: center;
   background-size: cover;
   /* width: 1600px; */
-  height: 679px;
+  height: 600px;
 }
 .hero-title {
   color: var(--white);
