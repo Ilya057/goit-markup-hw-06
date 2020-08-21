@@ -5,7 +5,7 @@
 html {
   box-sizing: border-box;
 }
-
+/* компоненты */
 *,
 *::before,
 *::after {
@@ -229,7 +229,6 @@ a.link {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
-  /* identical to box height, or 187% */
   letter-spacing: 0.06em;
 }
 
@@ -716,6 +715,9 @@ a.link {
 }
 .cross-button {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: 8px;
   right: 8px;
   width: 30px;
@@ -724,6 +726,10 @@ a.link {
   border-radius: 50%;
   cursor: pointer;
 }
+.cross-button:hover {
+  border-color: var(--accent);
+}
+
 .cross-button:hover .icon-close {
   fill: var(--accent);
 }
@@ -840,7 +846,6 @@ a.link {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
-  /* identical to box height, or 187% */
   letter-spacing: 0.06em;
 }
 .form-wrapper-button {
