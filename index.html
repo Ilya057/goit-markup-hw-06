@@ -19,7 +19,7 @@
     <header class="header">
       <div class="container header-container">
         <nav class="nav-container">
-          <a href="" class="logo">Web <span class="part">Studio</span></a>
+          <a href="" class="logo">Web<span class="part">Studio</span></a>
           <ul class="list site-nav">
             <li class="item"><a href="" class="link current">Студия</a></li>
             <li class="item">
@@ -328,7 +328,7 @@
     <footer class="footer">
       <div class="container">
         <div class="left-section">
-          <a href="" class="logo">Web <span class="logo part">Studio</span></a>
+          <a href="" class="logo">Web<span class="logo part">Studio</span></a>
           <address class="address">
             <span class="location"> г. Киев, пр-т Леси Украинки, 26</span>
             <br />
@@ -387,23 +387,35 @@
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button type="button" data-modal-close class="cross-button">
-          <svg width="11" height="11">
+          <svg class="icon-close" width="11" height="11">
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
         <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
         <form>
           <div class="form-wrapper">
-            <label class="form-label" for="name">Имя</label>
+            <label class="form-label" for="name">
+              Имя
+            </label>
             <input class="form-input" type="text" name="user-name" id="name" />
+            <svg class="modal-icon" width="12" height="12">
+              <use href="./images/sprite.svg#icon-person"></use>
+            </svg>
           </div>
           <div class="form-wrapper">
             <label class="form-label" for="telephone">Телефон</label>
+
             <input class="form-input" type="tel" name="telephone" id="telephone" />
+            <svg class="modal-icon" width="13" height="13">
+              <use href="./images/sprite.svg#icon-phone"></use>
+            </svg>
           </div>
           <div class="form-wrapper">
             <label class="form-label" for="email">Почта</label>
             <input class="form-input" type="email" name="user-email" id="email" />
+            <svg class="modal-icon" width="15" height="12">
+              <use href="./images/sprite.svg#icon-email"></use>
+            </svg>
           </div>
 
           <div class="form-wrapper">
@@ -411,9 +423,12 @@
             <textarea class="form-textarea" name="user-comment" id="comment" placeholder="Введите текст"></textarea>
           </div>
           <div class="form-wrapper-checkbox">
-            <input type="checkbox" id="agreement" name="agreement" value="agreed" />
-            <label class="form-label-checkbox" for="agreement"> </label>
-            Соглашаюсь с рассылкой и принимаю<a class="checkbox-link" href="">Условия договора</a>
+            <input type="checkbox" id="policy" name="user-policy" value="accept-policy" class="checkbox-input" />
+
+            <label class="form-label-checkbox" for="policy">
+              Соглашаюсь с рассылкой и принимаю
+              <a class="checkbox-link" target="_blank" href=""> &#160;Условия договора</a>
+            </label>
           </div>
           <div class="form-wrapper-button">
             <button class="modal-button" type="submit">Отправить</button>
