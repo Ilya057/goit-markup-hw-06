@@ -605,6 +605,7 @@ a.link {
 }
 .footer .logo {
   margin-bottom: 20px;
+  margin-right: 0px;
 }
 
 .footer .logo.part {
