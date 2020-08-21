@@ -200,7 +200,7 @@ a.link {
     url(../images/header-img.jpg);
   background-position: center;
   background-size: cover;
-  width: 1600px;
+  /* width: 1600px; */
   height: 679px;
 }
 .hero-title {
